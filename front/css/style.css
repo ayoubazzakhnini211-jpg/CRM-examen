@@ -1,3 +1,10 @@
 body { font-family: system-ui, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
 main { max-width: 760px; margin: 40px auto; padding: 0 16px; }
 h1 { text-align: center; }
+form { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+input { flex: 1; min-width: 140px; padding: 8px; border: 1px solid #ccd; border-radius: 6px; }
+button { padding: 8px 14px; border: 0; border-radius: 6px; background: #2563eb; color: #fff; cursor: pointer; }
+button.danger { background: #dc2626; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
+.status { text-align: center; color: #b91c1c; min-height: 1.2em; }

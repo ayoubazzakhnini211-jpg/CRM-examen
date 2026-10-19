@@ -8,8 +8,22 @@
   </head>
   <body>
     <main>
-      <h1>CRM</h1>
-      <p>Interface en construction.</p>
+      <h1>CRM — Clients</h1>
+      <p id="status" class="status"></p>
+
+      <form id="client-form">
+        <input id="nom" placeholder="Nom" required />
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="telephone" placeholder="Téléphone" />
+        <button type="submit">Ajouter</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr><th>Nom</th><th>Email</th><th>Téléphone</th><th></th></tr>
+        </thead>
+        <tbody id="clients"></tbody>
+      </table>
     </main>
     <script src="js/app.js"></script>
   </body>
