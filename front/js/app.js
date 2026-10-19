@@ -67,3 +67,16 @@ form.addEventListener("submit", async (e) => {
 });
 
 loadClients();
+
+// Bonus 3 : appel de GET /api/test et affichage du message dans la page.
+async function loadTestMessage() {
+  const el = document.getElementById("test-message");
+  try {
+    const data = await request("/api/test");
+    el.textContent = data.message;
+  } catch (err) {
+    el.textContent = "Erreur : " + err.message;
+  }
+}
+
+loadTestMessage();

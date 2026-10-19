@@ -8,3 +8,5 @@ button.danger { background: #dc2626; }
 table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
 th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
 .status { text-align: center; color: #b91c1c; min-height: 1.2em; }
+#hello { text-align: center; margin-bottom: 4px; }
+.test-message { text-align: center; color: #15803d; font-weight: 600; }
