@@ -1,6 +1,6 @@
 # CRM examen
 
-Mini CRM Full Stack : gestion de clients.
+Projet CRM Full Stack (examen).
 
 - `front/` : interface HTML, CSS, JavaScript
 - `back/` : serveur Node.js (Express) + MongoDB (Mongoose)

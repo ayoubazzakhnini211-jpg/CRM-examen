@@ -4,7 +4,6 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const connectDB = require("./config/db");
-const clientsRouter = require("./routes/clients");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,8 +14,6 @@ app.use(express.json());
 app.get("/api", (req, res) => {
   res.json({ message: "API CRM OK" });
 });
-
-app.use("/api/clients", clientsRouter);
 
 // Bonus 3 : route de test appelée par le front avec fetch().
 app.get("/api/test", (req, res) => {
